@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>todolist</title>
+    <link rel="stylesheet" type="text/css" href="1.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="topNav">
+            <h3>TodoList</h3>
+            <form id="form" action='javascript:postaction()' method='post'>
+                <input type="text" name="todoList" id="inputTodo" placeholder="输入内容" required="required"
+                    autocomplete="off">
+            </form>
+        </div>
+    </div>
+
+    <div class="todo">
+        <div class="lists">
+            <div class="todoNav" id="todoNav">
+                <span class="title1">还没做</span>
+                <span class="todoCount" id="todoCount">0</span>
+            </div>
+            <div class="todoList">
+                <ul id="todoList">
+                    <!-- js插入 -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="done">
+        <div class="lists1">
+            <div class="doneNav">
+                <span class="title2">做完了</span>
+                <span class="doneCount" id="doneCount">0</span>
+            </div>
+            <div class="doneList">
+                <ul id="doneList">
+                    <!-- js插入 -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="1.js"></script>
+
+</html>
